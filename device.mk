@@ -151,7 +151,9 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Memory
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
 
 # NFC
 PRODUCT_COPY_FILES += \
