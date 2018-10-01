@@ -15,6 +15,7 @@
 #
 
 DEVICE_PATH := device/motorola/clark
+ALLOW_MISSING_DEPENDENCIES=true
 
 # Arch
 BOARD_VENDOR := motorola-qcom
