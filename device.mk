@@ -151,9 +151,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Memory
-#$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -285,4 +283,4 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.thermal@1.0-impl \
     android.hardware.gnss@1.0-impl \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.0-service.basic
