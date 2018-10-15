@@ -529,10 +529,10 @@ service motosh /system/bin/motosh boot
     group compass misc input mot_tcmd
     oneshot
 
-#service mmi-touch-sh /system/bin/sh /init.mmi.touch.sh synaptics
- #   class core
-  #  user root
-   # oneshot
+service mmi-touch-sh /system/bin/sh /init.mmi.touch.sh synaptics
+    class core
+    user root
+    oneshot
 
 service hw_revs /system/bin/hardware_revisions.sh
     class late_start

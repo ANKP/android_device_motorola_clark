@@ -38,8 +38,7 @@ error_and_leave()
 		6)  err_msg="Error: Touch driver is not running";;
 	esac
 	notice "$err_msg"
-	#exit $err_code
-fi
+	exit $err_code
 }
 
 for touch_vendor in $*; do
