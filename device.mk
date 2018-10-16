@@ -281,6 +281,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service.lineage \
     android.hardware.sensors@1.0-impl \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@1.1-impl \
     android.hardware.gnss@1.0-impl \
-    android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.0-service.basic \
+    android.hardware.configstore@1.0-service
