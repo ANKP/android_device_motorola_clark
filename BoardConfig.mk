@@ -49,6 +49,9 @@ AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
+#binder
+TARGET_USES_64_BIT_BINDER := true
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED := false
@@ -158,8 +161,8 @@ TARGET_USE_SDCLANG := true
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += \
-#    $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
